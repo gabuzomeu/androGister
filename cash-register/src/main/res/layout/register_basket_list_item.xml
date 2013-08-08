@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/basket_list_item_quantity"
+        style="@style/basket_list_item"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:paddingLeft="10dip" />
+
+    
+    <TextView
+        android:id="@+id/basket_list_item_name"
+        style="@style/basket_list_item"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="10dip" />
+
+    <TextView
+        android:id="@+id/basket_list_item_price"
+        style="@style/basket_list_item"
+        android:layout_weight="0.4"
+        android:paddingLeft="10dip" />
+
+</LinearLayout>

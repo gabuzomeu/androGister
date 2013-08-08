@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/user_lastname"
+            style="@style/entity_edit"
+            android:hint="@string/user_lastname" />
+
+        <EditText
+            android:id="@+id/user_firstname"
+            style="@style/entity_edit"
+            android:layout_toRightOf="@id/user_lastname"
+            android:hint="@string/user_firstname" />
+
+        <EditText
+            android:id="@+id/user_matricule"
+            style="@style/entity_edit"
+            android:layout_alignLeft="@id/user_lastname"
+            android:layout_below="@id/user_lastname"
+            android:hint="@string/user_matricule" />
+    </RelativeLayout>
+
+</LinearLayout>

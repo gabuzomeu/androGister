@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory  android:title="@string/pref_category_general" >
+        <eu.ttbox.androgister.ui.config.preference.EditTextSummaryPreference
+            android:key="DEVICE_ID"  
+            android:title="@string/pref_device_id" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

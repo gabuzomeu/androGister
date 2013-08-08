@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+ 
+    <!-- Entity List -->
+    <style name="entity_list_item_container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">?android:attr/listPreferredItemHeight</item>
+        <item name="android:background">@drawable/entity_list_item_bg</item>
+    </style>
+
+    <style name="entity_list_item_container_header" parent="@style/entity_list_item_container">
+        <item name="android:background">@android:drawable/dark_header</item>
+    </style>
+
+    <style name="entity_list_item">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+
+    <style name="EntityListSeparatorTextViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!-- See comments for @dimen/list_section_divider_min_height -->
+        <item name="android:minHeight">@dimen/list_section_divider_min_height</item>
+        <item name="android:background">@drawable/list_section_divider_holo_custom</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/entity_app_theme_color</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">8dip</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="entity_edit">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">?android:attr/listPreferredItemHeight</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+    </style>
+
+    <style name="entity_view">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">?android:attr/listPreferredItemHeight</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+    </style>
+
+    <!-- Editor -->
+    <style name="EditorActivityTheme" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+
+        <!-- <item name="android:actionBarStyle">@style/ContactsActionBarStyle</item> -->
+        <!-- <item name="android:actionBarItemBackground">@drawable/action_bar_item_background</item> -->
+        <!-- <item name="android:actionBarWidgetTheme">@style/ContactsActionBarTheme</item> -->
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- <item name="android:textColorPrimary">@color/primary_text_color</item> -->
+        <!-- <item name="android:textColorSecondary">@color/secondary_text_color</item> -->
+        <item name="android:listViewStyle">@style/ListViewStyle</item>
+    </style>
+
+    <style name="ListViewStyle" parent="@android:style/Widget.Holo.Light.ListView">
+        <item name="android:overScrollMode">always</item>
+    </style>
+
+    <!-- Product List -->
+    <style name="product_list_item">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+
+    <style name="basket_list_item">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+
+    <style name="basket_screen_sum">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+    </style>
+
+    <style name="register_keyboard_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+    </style>
+
+</resources>

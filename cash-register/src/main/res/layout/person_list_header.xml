@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/entity_list_item_container_header"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <TextView
+        style="@style/entity_list_item"
+        android:layout_weight="1"
+        android:text="@string/person_lastname" />
+
+    <TextView
+        style="@style/entity_list_item"
+        android:layout_weight="1"
+        android:text="@string/person_firstname" />
+
+    <TextView
+        style="@style/entity_list_item"
+        android:layout_weight="1"
+        android:text="@string/person_matricule" />
+
+</LinearLayout>

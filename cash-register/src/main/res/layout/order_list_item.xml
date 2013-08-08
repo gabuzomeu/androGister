@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/entity_list_item_container"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/order_list_item_orderNum"
+        style="@style/entity_list_item"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:paddingLeft="2dip" />
+
+    <TextView
+        android:id="@+id/order_list_item_orderUuid"
+        style="@style/entity_list_item"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:paddingLeft="2dip" />
+
+    <TextView
+        android:id="@+id/order_list_item_status"
+        style="@style/entity_list_item"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:paddingLeft="2dip" />
+
+    <TextView
+        android:id="@+id/order_list_item_person_lastname"
+        style="@style/entity_list_item"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:paddingLeft="2dip" />
+
+    <TextView
+        android:id="@+id/order_list_item_person_firstname"
+        style="@style/entity_list_item"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:paddingLeft="2dip" />
+
+    <TextView
+        android:id="@+id/order_list_item_person_matricule"
+        style="@style/entity_list_item"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:paddingLeft="2dip" />
+
+    <TextView
+        android:id="@+id/order_list_item_date"
+        style="@style/entity_list_item"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:paddingLeft="2dip" />
+
+    <TextView
+        android:id="@+id/order_list_item_price"
+        style="@style/entity_list_item"
+        android:layout_weight="0.2"
+        android:paddingLeft="2dip" />
+
+</LinearLayout>

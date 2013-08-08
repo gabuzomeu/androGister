@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/register_kb_save_basket_credit"
+        style="@style/register_keyboard_button"
+        android:text="@string/kyb_ask_save_basket_credit" />
+
+   <Button
+        android:id="@+id/register_kb_save_basket_cash"
+        style="@style/register_keyboard_button"
+        android:text="@string/kyb_ask_save_basket_cash" />
+    
+        
+    <Button
+        android:id="@+id/register_kb_order_consult"
+        style="@style/register_keyboard_button"
+        android:text="@string/kyb_order_view_list" />
+
+    <Button
+        android:id="@+id/register_kb_person_view_list"
+        style="@style/register_keyboard_button"
+        android:text="@string/kyb_person_view_list" />
+
+</LinearLayout>

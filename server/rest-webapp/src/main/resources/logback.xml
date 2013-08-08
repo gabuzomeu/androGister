@@ -1,0 +1,60 @@
+<configuration>
+
+  <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>%-30(%d [%thread]) %-5level %logger [%line] - %msg %xEx{3}%n</pattern>
+    </encoder>
+  </appender>
+
+  <logger name="eu.ttbox.androgister">
+    <level value="DEBUG" />
+  </logger>
+
+  <logger name="org">
+    <level value="INFO" />
+  </logger>
+
+  <logger name="org.openid4java">
+    <level value="DEBUG" />
+  </logger>
+  
+  <logger name="org.jasig">
+    <level value="DEBUG" />
+  </logger>
+  
+    
+  <logger name="org.springframework.security.cas">
+    <level value="DEBUG" />
+  </logger>
+  
+     
+  <logger name="net.sf.ehcache">
+    <level value="INFO" />
+  </logger>
+
+  <logger name="org.springframework">
+    <level value="WARN" />
+  </logger>
+
+  <logger name="org.springframework.orm">
+    <level value="WARN" />
+  </logger>
+
+  <logger name="org.springframework.transaction">
+    <level value="WARN" />
+  </logger>
+
+   <logger name="org.springframework.web">
+    <level value="WARN" />
+  </logger>
+  
+  <logger name="me.prettyprint">
+    <level value="INFO" />
+  </logger>
+
+  <root>
+    <level value="DEBUG" />
+    <appender-ref ref="CONSOLE" />
+  </root>
+
+</configuration>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/eu.ttbox.androgister"
+    android:id="@+id/slidingmenu_container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="false" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <eu.ttbox.androgister.ui.slidingmenu.SlindingMenuItemView
+            android:id="@+id/menu_cash_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:src="@android:drawable/ic_menu_day"
+            app:text="Cash Register" />
+
+           <eu.ttbox.androgister.ui.slidingmenu.SlindingMenuItemView
+            android:id="@+id/menu_catalog_manager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:src="@android:drawable/ic_menu_gallery"
+            app:text="Catalog manager" />
+           
+        <eu.ttbox.androgister.ui.slidingmenu.SlindingMenuItemView
+            android:id="@+id/menu_preference"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:src="@android:drawable/ic_menu_preferences"
+            app:text="@string/menu_preference" />
+        
+        <eu.ttbox.androgister.ui.slidingmenu.SlindingMenuItemView
+            android:id="@+id/menu_security_preference"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:src="@android:drawable/ic_menu_preferences"
+            app:text="@string/menu_security_preference" />
+        
+       
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp" >
+
+    <EditText
+        android:id="@+id/product_name"
+        style="@style/entity_edit"
+        android:ems="25"
+        android:hint="@string/product_name" />
+
+    <EditText
+        android:id="@+id/product_description"
+        style="@style/entity_edit"
+        android:layout_height="wrap_content"
+        android:ems="25"
+        android:gravity="top"
+        android:hint="@string/product_description"
+        android:lines="5" />
+
+    <ImageView android:id="@+id/product_photo"
+         android:layout_height="256dp"
+         android:layout_width="256dp" 
+         android:src="@drawable/ic_launcher"/>
+    
+    <EditText
+        android:id="@+id/product_price_ht"
+        style="@style/entity_edit"
+        android:ems="10"
+        android:hint="@string/product_price_ht"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/product_tag"
+        style="@style/entity_edit"
+        android:ems="25"
+        android:hint="@string/product_tag" />
+
+    <Spinner
+        android:id="@+id/product_taxe_spinner"
+        style="@style/entity_edit"
+        android:ems="25"
+        android:hint="@string/product_taxe" />
+
+    <Spinner
+        android:id="@+id/product_tag_spinner"
+        style="@style/entity_edit"
+        android:ems="25"
+        android:hint="@string/product_tag" />
+
+</LinearLayout>
