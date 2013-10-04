@@ -96,11 +96,9 @@
     <string name="label_phone_home">Home Phone</string>
     <string name="label_phone_mobile">Mobile Phone</string>
     <string name="label_phone_work">Work Phone</string>
-    <string name="label_email">Email</string>
-    <string
-        name="menu_done">Done</string>
-    <string
-        name="menu_cancel">Cancel</string>
+    <string name="label_email">Email</string> 
+    
+    <string name="menu_cancel">Cancel</string>
 
     <!-- Strings for contacts.xml -->
     <skip />
