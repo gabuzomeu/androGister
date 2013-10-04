@@ -4,9 +4,9 @@ import android.graphics.Canvas;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-import com.slidingmenu.lib.SlidingMenu;
-import com.slidingmenu.lib.SlidingMenu.CanvasTransformer;
-import com.slidingmenu.lib.app.SlidingActivity;
+import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
+import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu.CanvasTransformer;
+import com.jeremyfeinstein.slidingmenu.lib.app.SlidingActivity;
 
 public class AndroGisterActivity extends SlidingActivity {
 

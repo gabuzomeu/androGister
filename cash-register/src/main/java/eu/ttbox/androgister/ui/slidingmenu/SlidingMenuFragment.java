@@ -14,7 +14,8 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.ScrollView;
 
-import com.slidingmenu.lib.app.SlidingActivityBase;
+
+import com.jeremyfeinstein.slidingmenu.lib.app.SlidingActivityBase;
 
 import eu.ttbox.androgister.R;
 import eu.ttbox.androgister.security.DeviceAdminActivity;
