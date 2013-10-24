@@ -37,7 +37,7 @@
       <slidingmenu.version>1.2</slidingmenu.version>
 
       <!-- Database -->
-      <greendao.version>1.3.1</greendao.version>
+      <greendao.version>1.3.3</greendao.version>
       <greendao-generator.version>1.3.0-ttbox</greendao-generator.version>
 
       <!-- Test -->

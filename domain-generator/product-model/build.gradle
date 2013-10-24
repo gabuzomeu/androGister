@@ -13,7 +13,7 @@ apply plugin: 'maven'
 
 sourceCompatibility = 1.6 
 
-def generatedModelResources = "$buildDir/generated-src-models/java"
+def generatedModelResources = "gen-src-models"
 
 
 repositories {
@@ -31,7 +31,7 @@ dependencies {
 sourceSets {
     main {
         java {
-            srcDirs = ['src/main/java',  'build/generated-src-models/java']
+            srcDirs = ['src/main/java',  'gen-src-models']
             println "### java.srcDirs = ${java.srcDirs}"
         }
     }
@@ -47,11 +47,19 @@ task( generateModels, type: JavaExec ) {
     def schemaPackage = "eu.ttbox.androgister.domain" 
     // Generate
     def modelDest = file("$generatedModelResources")
+    def copyDest = file("$generatedModelResources/eu/ttbox/androgister/domain")
     outputs.dir modelDest
     doFirst {
-        modelDest.exists() || modelDest.mkdirs() 
+        modelDest.exists() || modelDest.mkdirs()
+        copyDest.exists() || copyDest.mkdirs()
         println "--- --------------------------------------------------------- ---"
-        println "--- Generate Product Model ! in " +  modelDest
+        println "--- Copy  Template Model in : " +  copyDest
+        copy {
+            from 'src/main/template'
+            into  copyDest
+        }
+        println "--- --------------------------------------------------------- ---"
+        println "--- Generate Product Model in : " +  modelDest
         args 1, "$schemaPackage", "$generatedModelResources" 
         println "--- --------------------------------------------------------- ---"
     } 

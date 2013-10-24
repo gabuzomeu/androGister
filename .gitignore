@@ -13,6 +13,7 @@ bin/
 gen/
 target
 build
+gen-src-models/
 
 # Local configuration file (sdk path, etc)
 local.properties
