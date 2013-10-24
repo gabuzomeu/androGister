@@ -32,9 +32,10 @@ List productModel = ['eu.ttbox.androgister.domain:product-model:0.0.1@jar']
 dependencies {
 
 
-    //compile project(':geoPing-encoder')
+
     compile productModel
-      
+    //compile project(":domain-generator:product-model")
+
     compile "com.android.support:support-v13:18.0.+"
     //compile "com.android.support:appcompat-v7:18.0.+@aar"
     compile slidingmenu
@@ -55,7 +56,7 @@ android {
     sourceSets {
         main {
             // otherwise aidl task does not see aidl files in the project
-            aidl.srcDirs = ['src/main/java']
+            //aidl.srcDirs = ['src/main/java']
 
         }
     }

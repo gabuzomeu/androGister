@@ -1,1 +1,2 @@
 include ':cash-register'
+include ':domain-generator', ':domain-generator:model-builder', ':domain-generator:product-model'

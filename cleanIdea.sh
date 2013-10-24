@@ -3,6 +3,8 @@
 rm -rf .idea
 rm -rf out
 rm -rf */gen-external-apklibs
+rm -rf */*/gen-external-apklibs
 rm *.iml
-rm */*.iml
+rm */*.iml 
+rm */*/*.iml 
 
