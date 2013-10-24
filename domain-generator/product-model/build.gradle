@@ -1,9 +1,10 @@
-
 apply plugin: 'java'
-apply plugin:'application'
+apply plugin: 'maven' 
 
-sourceCompatibility = 1.6
-mainClassName = "eu.ttbox.androgister.domain.generator.RegisterDaoGenerator"
+sourceCompatibility = 1.6 
+
+def generatedModelResources = "$buildDir/generated-src-models/java"
+
 
 repositories {
     mavenLocal()
@@ -12,16 +13,46 @@ repositories {
 
 dependencies {
     testCompile 'junit:junit:4.11'
-    compile('de.greenrobot:greendao-generator:1.3.1')
+    compile('de.greenrobot:greendao-generator:1.3.0-ttbox')
+    compile project(':model-builder') 
 }
 
-compileJava {
-    sourceCompatibility = 1.6
-    targetCompatibility = 1.6
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src/main/java',  '$generatedModelResources']
+        }
+    }
+}
+
+task( generateModels, type: JavaExec ) {
+    // Config exec
+    main = "eu.ttbox.androgister.domain.generator.RegisterDaoGenerator"
+    classpath = sourceSets.main.compileClasspath
+    // Config Generator
+    def schemaVersion = 1
+    def schemaPackage = "eu.ttbox.androgister.domain"
+    //def schemaOutputPath = "$buildDir/src-gen-model"
+   // def schemaOutput = file("$schemaOutputPath")
+    // Generate
+    def modelDest = file("$generatedModelResources")
+    outputs.dir modelDest
+    doFirst {
+        modelDest.exists() || modelDest.mkdirs() 
+        println "--- --------------------------------------------------------- ---"
+        println "--- Generate Product Model ! in " +  modelDest
+        args 1, "$schemaPackage", "$generatedModelResources" 
+        println "--- --------------------------------------------------------- ---"
+    } 
+  
+}
+ 
+compileJava{
+    dependsOn generateModels
 }
 
 task sourcesJar(type: Jar, dependsOn: classes) {
-    classifier = 'sources'
+    classifier = 'sources' 
     from sourceSets.main.allSource
 }
 

@@ -1,5 +1,8 @@
 package eu.ttbox.androgister.domain.generator;
 
+import java.lang.StringBuilder;
+import java.lang.System;
+
 import de.greenrobot.daogenerator.DaoGenerator;
 import de.greenrobot.daogenerator.Entity;
 import de.greenrobot.daogenerator.Index;
@@ -10,6 +13,12 @@ import de.greenrobot.daogenerator.ToMany;
 public class RegisterDaoGenerator {
 
     public static void main(String[] args) throws Exception {
+        StringBuilder argsToString = new StringBuilder();
+        int i = 0;
+        for (String arg : args) {
+            argsToString.append("arg ").append(++i).append(" : ").append(arg).append(", ");
+        }
+        System.out.println(argsToString.toString());
         Schema schema = new Schema(Integer.parseInt(args[0]), args[1]);
 
         Entity taxe = addTaxe(schema);

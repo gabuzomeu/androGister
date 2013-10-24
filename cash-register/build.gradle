@@ -4,7 +4,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:0.5.+'
+        classpath 'com.android.tools.build:gradle:0.6.+'
     }
 }
 
@@ -17,7 +17,6 @@ apply plugin: 'android'
 //List jackson = ['com.fasterxml.jackson.core:jackson-core:2.2.3@jar', 'com.fasterxml.jackson.core:jackson-databind:2.2.3@jar']
 
 // Google Apis
-List admob = ['com.google.android.admob:admob:6.4.1-r11@jar']
 List googlePlayServices = ['com.google.android.gms:play-services:3.2.65@aar']
 List analytics = ['com.google.android.analytics:analytics:3@jar']
 
@@ -51,7 +50,7 @@ dependencies {
 
 android {
     compileSdkVersion 18
-    buildToolsVersion "18.1.0" //18.0.1
+    buildToolsVersion "18.1.1" //18.0.1
 
     sourceSets {
         main {
