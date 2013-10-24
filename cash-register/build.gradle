@@ -25,16 +25,19 @@ List slidingmenu = ['com.jeremyfeinstein.slidingmenu:library:1.3.2@aar']
 
 
 // Model
-List greendao = ['de.greenrobot:greendao:1.3.1@jar']
-List productModel = ['eu.ttbox.androgister.domain:product-model:0.0.1@jar']
+List greendao = ['de.greenrobot:greendao:1.3.3@jar']
+//List productModel = ['eu.ttbox.androgister.domain:product-model:0.0.1@jar']
 
+//configurations.all {
+//    transitive = false
+// }
 
 dependencies {
 
-
-
     //compile productModel
-    compile project(":domain-generator:product-model")
+    compile(project(":domain-generator:product-model")) {
+        transitive = false
+    }
 
     compile "com.android.support:support-v13:18.0.+"
     //compile "com.android.support:appcompat-v7:18.0.+@aar"
@@ -61,7 +64,7 @@ android {
         }
     }
     defaultConfig {
-        minSdkVersion 14
+        minSdkVersion 15
         targetSdkVersion 18
     }
 
