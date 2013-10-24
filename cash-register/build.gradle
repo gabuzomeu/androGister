@@ -25,7 +25,7 @@ List slidingmenu = ['com.jeremyfeinstein.slidingmenu:library:1.3.2@aar']
 
 
 // Model
-List greendao = ['de.greenrobot:greendao:1.3.3@jar']
+List greendao = ['de.greenrobot:greendao:1.3.2@jar']
 //List productModel = ['eu.ttbox.androgister.domain:product-model:0.0.1@jar']
 
 //configurations.all {
@@ -39,15 +39,15 @@ dependencies {
         transitive = false
     }
 
-    compile "com.android.support:support-v13:18.0.+"
+     compile ('com.android.support:support-v13:18.0.+')  { transitive = true }
     //compile "com.android.support:appcompat-v7:18.0.+@aar"
     compile slidingmenu
 
     //compile ('com.squareup.okhttp:okhttp:1.2.+@jar') { transitive = true }
     compile ('com.squareup:otto:1.3.4@jar')  { transitive = true }
 
-    compile googlePlayServices
-    compile analytics
+//    compile googlePlayServices
+//    compile analytics
     compile greendao
 
 }
